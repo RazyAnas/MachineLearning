@@ -1,0 +1,68 @@
+Problem Statement
+
+
+
+Rohan has a 2D NumPy array with a specific number of rows and columns. He wants to sort this array in three different ways:
+
+
+
+Sort each row of the array in ascending order.
+Flatten the array and sort it in ascending order.
+Sort each column of the array in ascending order.
+
+
+Write a program to help Rohan sort the array in these three ways.
+
+Input format :
+The first line contains two space-separated integers, n and m, representing the number of rows and columns of the array, respectively.
+
+The next n lines contain m space-separated integers, each representing the elements of the array.
+
+Output format :
+The first line of output prints "Sorted based on last axis(1):" followed by the array sorted row-wise.
+
+The second line prints "Sorted flattened array:" followed by the flattened and sorted array.
+
+The third line prints "Sorted based on axis 0:" followed by the array sorted column-wise.
+
+
+
+Refer to the sample output for the formatting specifications.
+
+Code constraints :
+In this scenario, the given test cases will fall under the following constraints:
+
+1 ≤ rows, cols ≤ 5
+
+1 ≤ Element in the array ≤ 200
+
+Sample test cases :
+Input 1 :
+3 3
+3 10 2
+1 5 7
+2 7 5
+Output 1 :
+Sorted based on last axis(1):
+[[ 2  3 10]
+ [ 1  5  7]
+ [ 2  5  7]]
+Sorted flattened array:
+[ 1  2  2  3  5  5  7  7 10]
+Sorted based on axis 0:
+[[ 1  5  2]
+ [ 2  7  5]
+ [ 3 10  7]]
+Input 2 :
+2 4
+8 3 1 5
+4 7 2 6
+Output 2 :
+Sorted based on last axis(1):
+[[1 3 5 8]
+ [2 4 6 7]]
+Sorted flattened array:
+[1 2 3 4 5 6 7 8]
+Sorted based on axis 0:
+[[4 3 1 5]
+ [8 7 2 6]]
